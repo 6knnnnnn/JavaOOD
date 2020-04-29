@@ -9,9 +9,7 @@ public class Client {
     private static void case1() {
         DBRequest request = new DBRequest();
 
-        String dbName = "db2";
-
-        InterfaceDAO dao = DAOFactory.createDAO(dbName);
+        InterfaceDAO dao = DAOFactory.createDAO("db2");
 
         DBResponse response = dao.queryDB(request);
         if (response != null) {

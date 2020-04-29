@@ -6,7 +6,7 @@ public class Client {
         Query.QueryBuilder builder = new Query.QueryBuilder();
 
         Query query = builder.addColumnName("price")
-                .addTableName("product").setDbName("finance").setWhereCondition("productID = 1")
+                .addTableName("service").setDbName("finance").setWhereCondition("productID = 1")
                 .build();
         System.out.println(query);
     }
@@ -15,7 +15,7 @@ public class Client {
         Query.QueryBuilder builder = new Query.QueryBuilder();
 
         Query query = builder.addColumnName("price, productName")
-                .addTableName("product").setDbName("finance")
+                .addTableName("service").setDbName("finance")
                 .setWhereCondition("country = 'USCAN'")
                 .setHavingCondition("AVG(price) >= 100 GROUP BY productName")
                 .build();
@@ -27,14 +27,14 @@ public class Client {
 //        SimpleQuery sq = new SimpleQuery();
 //        sq.setDbName("finance");
 //        sq.setColumnNames(Arrays.asList("price, productName"));
-//        sq.setTableNames(Arrays.asList("product"));
+//        sq.setTableNames(Arrays.asList("service"));
 //        System.out.println(sq);
-//        // "USE finance; SELECT price, productName FROM product"
+//        // "USE finance; SELECT price, productName FROM service"
 //
 //        // inconsistent state
 //        sq.setWhereCondition("AVG(price) >= 100 GROUP BY productName");
 //        System.out.println(sq);
-//        // "USE finance; SELECT price, productName FROM product WHERE AVG(price) >= 100 GROUP BY productName"
+//        // "USE finance; SELECT price, productName FROM service WHERE AVG(price) >= 100 GROUP BY productName"
     }
 
 

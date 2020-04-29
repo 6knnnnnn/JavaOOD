@@ -1,4 +1,4 @@
-package 设计模式.工厂.抽象工厂.dbAccessFactory;
+package 设计模式.工厂.工厂.dbAccessFactory;
 
 import 设计模式.工厂.简单工厂.dbAccessObject.InterfaceDAO;
 import 设计模式.工厂.简单工厂.dbAccessObject.OracleDAO;

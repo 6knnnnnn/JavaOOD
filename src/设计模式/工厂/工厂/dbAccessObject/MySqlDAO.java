@@ -1,4 +1,4 @@
-package 设计模式.工厂.抽象工厂.dbAccessObject;
+package 设计模式.工厂.工厂.dbAccessObject;
 
 import 设计模式.工厂.entity.DBRequest;
 import 设计模式.工厂.entity.DBResponse;
